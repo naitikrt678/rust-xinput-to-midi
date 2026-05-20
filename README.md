@@ -9,21 +9,21 @@ A high-performance, lightweight Windows desktop application built in Rust that c
 
 ---
 
-## ✨ Features
+## Features
 
-- **⚡ Zero-Latency Performance** – Direct polling of XInput controllers and native WinRT MIDI connection.
-- **🔌 Auto-Detection** – Automatically scans and connects to Xbox/XInput controllers (polls all 4 slots).
-- **🚫 Spam Prevention** – Edge-detection algorithm ensures a single `Note-On` event is sent when pressed, and a single `Note-Off` is sent on release (no repeat spam while holding buttons).
-- **🎹 GM Percussion Standard** – Outputs to MIDI channel 10 with fixed maximum velocity (127) as per GM specs.
-- **🎛️ Digital Triggers** – Left and Right triggers (LT/RT) are treated as digital buttons with a customizable analog threshold (triggers at >25% pull).
-- **📂 Note Mapping** – Load simple, human-readable plain-text note name maps (`.txt`) for easy visual assignments.
-- **💾 Configuration Management** – Save and load your customized button-to-note maps as light `.json` config files.
-- **🔄 Live Remapping** – Update bindings on-the-fly inside the clean, dark-themed user interface while the app is actively running.
-- **🔊 Virtual/Hardware Compatible** – Works seamlessly with virtual MIDI drivers like `loopMIDI` and any external hardware MIDI outputs.
+- ** Zero-Latency Performance** – Direct polling of XInput controllers and native WinRT MIDI connection.
+- ** Auto-Detection** – Automatically scans and connects to Xbox/XInput controllers (polls all 4 slots).
+- ** Spam Prevention** – Edge-detection algorithm ensures a single `Note-On` event is sent when pressed, and a single `Note-Off` is sent on release (no repeat spam while holding buttons).
+- **GM Percussion Standard** – Outputs to MIDI channel 10 with fixed maximum velocity (127) as per GM specs.
+- **Digital Triggers** – Left and Right triggers (LT/RT) are treated as digital buttons with a customizable analog threshold (triggers at >25% pull).
+- **Note Mapping** – Load simple, human-readable plain-text note name maps (`.txt`) for easy visual assignments.
+- **Configuration Management** – Save and load your customized button-to-note maps as light `.json` config files.
+- **Live Remapping** – Update bindings on-the-fly inside the clean, dark-themed user interface while the app is actively running.
+- **Virtual/Hardware Compatible** – Works seamlessly with virtual MIDI drivers like `loopMIDI` and any external hardware MIDI outputs.
 
 ---
 
-## 🚀 Quick Start & Usage
+## Quick Start & Usage
 
 1. **Setup MIDI Port**: Start your virtual MIDI driver (e.g., **loopMIDI**) or connect your hardware MIDI device.
 2. **Launch App**: Open `controller-midi.exe`.
@@ -35,7 +35,7 @@ A high-performance, lightweight Windows desktop application built in Rust that c
 
 ---
 
-## 🛠️ Build Requirements
+## Build Requirements
 
 The project compiles on Windows using the **GNU toolchain** via **MSYS2 UCRT64**. *No bulky Visual Studio installations or MSVC Build Tools are required.*
 
@@ -78,7 +78,7 @@ The project compiles on Windows using the **GNU toolchain** via **MSYS2 UCRT64**
 
 ---
 
-## 📦 How to Build into a Standalone `.exe`
+## How to Build into a Standalone `.exe`
 
 To package this application as a clean, polished Windows executable (`.exe`) suitable for distribution, follow these steps:
 
@@ -128,7 +128,9 @@ To give your final `.exe` a custom logo (instead of the default blank Windows ex
 
 ---
 
-## 🔍 File Formats
+## File Formats
+
+Sample controller layouts and mappings are available in the [sample maps](./sample%20maps) folder.
 
 ### Note Name Map Format (`.txt`)
 A plain text file containing space-separated note numbers and labels:
@@ -185,9 +187,9 @@ controller-midi/
 
 ---
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
-### ❌ `dlltool: could not create import library` / `Invalid bfd target`
+### `dlltool: could not create import library` / `Invalid bfd target`
 
 - **Symptom**: Native compilation fails when installing dependencies or running cargo tasks.
 - **Cause**: An older or alternative MinGW installation (like `C:\MinGW`) exists in your system `PATH` and is shadowing the MSYS2 GCC.
