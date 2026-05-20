@@ -11,9 +11,9 @@ A high-performance, lightweight Windows desktop application built in Rust that c
 
 ## Features
 
-- ** Zero-Latency Performance** – Direct polling of XInput controllers and native WinRT MIDI connection.
-- ** Auto-Detection** – Automatically scans and connects to Xbox/XInput controllers (polls all 4 slots).
-- ** Spam Prevention** – Edge-detection algorithm ensures a single `Note-On` event is sent when pressed, and a single `Note-Off` is sent on release (no repeat spam while holding buttons).
+- **Zero-Latency Performance** – Direct polling of XInput controllers and native WinRT MIDI connection.
+- **Auto-Detection** – Automatically scans and connects to Xbox/XInput controllers (polls all 4 slots).
+- **Spam Prevention** – Edge-detection algorithm ensures a single `Note-On` event is sent when pressed, and a single `Note-Off` is sent on release (no repeat spam while holding buttons).
 - **GM Percussion Standard** – Outputs to MIDI channel 10 with fixed maximum velocity (127) as per GM specs.
 - **Digital Triggers** – Left and Right triggers (LT/RT) are treated as digital buttons with a customizable analog threshold (triggers at >25% pull).
 - **Note Mapping** – Load simple, human-readable plain-text note name maps (`.txt`) for easy visual assignments.
