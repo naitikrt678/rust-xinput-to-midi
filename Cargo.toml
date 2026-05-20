@@ -1,0 +1,33 @@
+[package]
+name = "controller-midi"
+version = "0.1.0"
+edition = "2021"
+description = "XInput gamepad to MIDI note event mapper"
+authors = ["controller-midi"]
+
+[[bin]]
+name = "controller-midi"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.27", features = ["default"] }
+egui = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.14"
+windows = { version = "0.56", features = [
+    "Win32_UI_Input_XboxController",
+    "Devices_Midi",
+    "Devices_Enumeration",
+    "Foundation_Collections",
+    "Foundation",
+] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.dev]
+opt-level = 1

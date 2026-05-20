@@ -1,0 +1,33 @@
+# MIDI note/CC name map
+79 Stick Click
+77 Stack: Crash
+74 Splash: Choke
+73 Splash: Crash
+66 China: Choke
+65 China: Crash
+62 Ride Bow
+61 Ride Bell
+59 Crash R: Bow
+58 Crash R: Bell
+57 Crash Far L: Choke
+56 Crash Far L: Crash
+55 Crash R: Choke
+54 Crash R: Crash
+53 Crash L: Choke
+52 Crash L: Crash
+48 Hats Pedal
+47 Hats Open 3
+46 Hats Open 2
+45 Hats Open 1
+44 Hats Edge Closed
+43 Hats Tip Closed
+42 Hats Edge Tight
+41 Hats Tip Tight
+35 Floor Tom 2
+34 Floor Tom 1
+33 Rack Tom
+30 Snare Cross Stick
+29 Snare Wires Off
+26 Snare Hit
+24 Kick Hit
+17 Hats: CC
